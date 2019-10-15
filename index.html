@@ -11,15 +11,20 @@
     <title>Array methods</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container mb-5">
       <h1 class="jumbotron display-2 text-center">Array methods</h1>
       <h1 class="display-4 text-center">Concat()</h1>
       <p>The concat() method is used to merge (concatenate) arrays. It returns a new array with the array that you called the method on at the start followed by the array you put in as the parameter.</p>
       <p>i.e. arr1.concat(arr2) concatenates arr2 onto the end of arr1 and combines them into one array.</p>
 
       <h1 class="display-4 text-center">Shift()</h1>
-
+      <p>The shift() and unshift() methods work with adding and removing elements from the start of the array unlike push() and pop() which add and remove elements from the end of the array.</p>
+      <p>The shift() method will remove the first array element and shift all the other elements to a lower index to fill in the removed elements.</p>
+      <p>i.e. an array of 5 elements called arr can have its first element removed by doing arr.shift(); This then makes the element index [1] become index [0], index [2] become index [1] and so on.</p>
+      <p>This method will return the value that was shifted so if the first element was "banana" and we console.log(arr.shift()) then the the word "banana" will be consoled and "banana" will be removed from the array.</p>
       <h1 class="display-4 text-center">Unshift()</h1>
+      <p>The unshift() method adds a new element to an array at index [0] and "unshifts" the others meaning each original element is moved up one so the old index [0] is moved to index [1], the old index [1] is moved to index [2] and so on.</p>
+      <p>This method will return the length of the new array. So if we console.log(arr.unshift("Apple")) and arr was an array of 4 elements it will console the number "5" as that is the new length of the array after the element "Apple" was added at the beginning.</p>
 
     </div>
 
